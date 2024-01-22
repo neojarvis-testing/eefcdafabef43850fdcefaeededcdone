@@ -6,3 +6,6 @@
 [FATAL] 2024-01-22 10:52:32,652 StepDefinition.Homepage i_am_on_ELC_Website - This is fatal message
 [INFO] 2024-01-22 10:52:37,917 Utils.LoggerHandler openBrowser - Browser Launched
 [INFO] 2024-01-22 10:52:37,936 Utils.LoggerHandler openBrowser - Browser Loaded the URL
+[INFO] 2024-01-22 10:58:06,034 Utils.LoggerHandler openBrowser - Browser Launched
+[INFO] 2024-01-22 10:58:06,050 Utils.LoggerHandler openBrowser - Browser Loaded the URL
+[INFO] 2024-01-22 10:58:16,011 Utils.LoggerHandler ClickMenu - Offers
