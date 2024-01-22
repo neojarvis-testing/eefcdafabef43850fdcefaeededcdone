@@ -38,7 +38,7 @@ public class Testcase2 {
             driverHelper.hoverOneElement(ShoppingUI.Shop_By_Age);
             driverHelper.clickElement(ShoppingUI.SelectAge);
              test.log(Status.PASS, "Hover and Selected the age");
-            //  Thread.sleep(30000);
+             Thread.sleep(30000);
         } catch (Exception e) {
             e.printStackTrace();
             String base64Screenshot = Reporter.captureScreenshotAsBase64(driver, "Age selecting Error");
