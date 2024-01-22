@@ -1,34 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: Runner.RunTest
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 0, Errors: 3, Skipped: 2, Time elapsed: 369.115 s <<< FAILURE! - in Runner.RunTest
-And I scroll down until I locate the "Price" option on the left side of the page(Scenario: Filter products by price range)  Time elapsed: 0.042 s  <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-Unable to route (GET) /session/9e76300f05bcf934916e18f017a1bc35/screenshot
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133+', java.version: '11.0.21'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9e76300f05bcf934916e18f017a1bc35, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.104.0.79:4444/sessi..., se:cdpVersion: 120.0.6099.109, se:vnc: ws://10.104.0.79:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.104.0.79:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9e76300f05bcf934916e18f017a1bc35
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 60.754 s <<< FAILURE! - in Runner.RunTest
+Then I verify the total number of results found based on the selected price range(Scenario: Filter products by price range)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: C2 text does not contain C1 text. C1 text: '42', C2 text: '154Productsfound'
 
-Scenario: Filter products by price range  Time elapsed: 0.1 s  <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-Unable to route (GET) /session/9e76300f05bcf934916e18f017a1bc35/screenshot
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133+', java.version: '11.0.21'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9e76300f05bcf934916e18f017a1bc35, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.104.0.79:4444/sessi..., se:cdpVersion: 120.0.6099.109, se:vnc: ws://10.104.0.79:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.104.0.79:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9e76300f05bcf934916e18f017a1bc35
-
-Scenario: Filter products by price range  Time elapsed: 0.417 s  <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-Unable to route (DELETE) /session/9e76300f05bcf934916e18f017a1bc35
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133+', java.version: '11.0.21'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9e76300f05bcf934916e18f017a1bc35, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.104.0.79:4444/sessi..., se:cdpVersion: 120.0.6099.109, se:vnc: ws://10.104.0.79:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.104.0.79:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9e76300f05bcf934916e18f017a1bc35
+Scenario: Filter products by price range  Time elapsed: 0.025 s  <<< FAILURE!
+java.lang.AssertionError: C2 text does not contain C1 text. C1 text: '42', C2 text: '154Productsfound'
 
